@@ -1,4 +1,5 @@
-
+class Article:
+    all= []
     
     def __init__(self, author, magazine, title):
         self.author = author
@@ -143,11 +144,13 @@ if contributing_authors:
     print("Authors who have written more than two articles for Magazine one:")
     for author in contributing_authors:
         print(author.name)
+else:
+    print("No authors found who have written more than two articles for Magazine 1")
 
 top_publisher = Magazine.top_publisher()
 
 if top_publisher:
-   
+    print(f"The Magazine with the most articles is: {top_publisher.name}")
     print(f"Category: {top_publisher.category}")
 else:
     print("No articles found.")
