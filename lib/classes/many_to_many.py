@@ -147,6 +147,7 @@ if contributing_authors:
 else:
     print("No authors found who have written more than two articles for Magazine 1")
 
+top_publisher = Magazine.top_publisher()
 
 if top_publisher:
     print(f"The Magazine with the most articles is: {top_publisher.name}")
